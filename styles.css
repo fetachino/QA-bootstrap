@@ -72,7 +72,7 @@ body {
 .btn-horror {
     background-color: #212529;
     border-color: #212529;
-    color: #ffffff; /* Adding white text color for better contrast */
+    color: #ffffff !important; /* Adding important to ensure white text color */
 }
 
 .btn-submit {
