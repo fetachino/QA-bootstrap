@@ -1,14 +1,11 @@
-/* Basic page styling */
 body {
     background-color: #121212;
-    color: #ffffff;
+    color: #f8f9fa;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 50px;
 }
 
-/* Main container styling */
 .quiz-container {
-    max-width: 800px;
+    max-width: 700px;
     margin: 30px auto;
     background-color: #1e1e1e;
     border-radius: 15px;
@@ -16,334 +13,107 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
-/* Header section styling */
 .quiz-header {
     text-align: center;
     margin-bottom: 30px;
-    color: #ffa500;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #444;
+    color: #ff9d00;
 }
 
-.quiz-header h1 {
-    color: #ffa500;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.quiz-header p {
-    color: #ffffff;
-    font-size: 1.2rem;
-}
-
-/* Progress bar styling */
-.progress {
-    height: 10px;
-    margin-bottom: 25px;
-}
-
-.progress-bar {
-    background-color: #ffa500;
-}
-
-/* Question section styling */
 .quiz-section {
     margin-bottom: 25px;
-    padding: 20px;
+    padding: 15px;
     background-color: #292929;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Question text styling */
 .question {
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-    color: #ffffff;
-    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #e0e0e0;
 }
 
-/* Options container styling */
 .options {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* Basic button styling for options */
-.options .btn {
-    color: #ffffff;
-    background-color: #333333;
-    border: 2px solid #666666;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    text-align: left;
-    padding: 12px 15px;
-    border-radius: 6px;
-    width: 100%;
+.btn-quiz {
+    margin: 5px;
+    min-width: 120px;
 }
 
-.options .btn:hover {
-    background-color: #444444;
-    border-color: #888888;
-}
-
-.options .btn.active {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
-    color: #ffffff;
-}
-
-/* Genre button styling */
 .btn-genre {
-    color: #ffffff !important;
     margin: 5px;
     min-width: 110px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    font-weight: 500;
 }
 
-/* Submit button styling */
+.btn-action {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-comedy {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.btn-drama {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-scifi {
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+    color: #212529;
+}
+
+.btn-horror {
+    background-color: #212529;
+    border-color: #212529;
+}
+
 .btn-submit {
     background-color: #ff9d00;
     border-color: #ff9d00;
-    color: #000000;
+    color: #212529;
     font-weight: bold;
-    padding: 12px 25px;
+    padding: 10px 25px;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
 }
 
-.btn-submit:hover {
-    background-color: #ffb84d;
-    border-color: #ffb84d;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.result-container {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #292929;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-/* Custom checkbox styling */
 .form-check-input:checked {
     background-color: #ff9d00;
     border-color: #ff9d00;
 }
 
-/* Section title styling */
+.progress {
+    height: 10px;
+    margin-bottom: 25px;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
 .quiz-section-title {
     font-weight: bold;
-    color: #ffa500;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
+    color: #ff9d00;
+    margin-bottom: 15px;
 }
 
-/* Restart button styling */
 .btn-restart {
-    background-color: #2cb74a;
-    border-color: #2cb74a;
-    color: #ffffff;
+    background-color: #198754;
+    border-color: #198754;
     margin-top: 15px;
-    padding: 8px 20px;
-    font-weight: bold;
-}
-
-.btn-restart:hover {
-    background-color: #34d456;
-    border-color: #34d456;
-}
-
-/* Results section styling */
-.results-section {
-    padding: 30px 15px;
-    margin-top: 40px;
-    border-top: 2px solid #444;
-}
-
-/* Genre card styling */
-.genre-card {
-    background-color: #292929;
-    border: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    color: #ffffff;
-}
-
-.genre-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Genre-specific card styling */
-.action-card {
-    border-top: 4px solid #ff4d4d;
-}
-
-.comedy-card {
-    border-top: 4px solid #ffdd4d;
-}
-
-.drama-card {
-    border-top: 4px solid #a0a0a0;
-}
-
-.scifi-card {
-    border-top: 4px solid #4dffff;
-}
-
-/* Card text styling */
-.card-title {
-    color: #ffa500;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-.card-text {
-    color: #ffffff;
-    font-size: 1.1rem;
-}
-
-/* Button outline styling - normal state */
-.btn-outline-danger {
-    color: #ff4d4d !important;
-    border-color: #ff4d4d;
-    background-color: transparent;
-}
-
-.btn-outline-warning {
-    color: #ffdd4d !important;
-    border-color: #ffdd4d;
-    background-color: transparent;
-}
-
-.btn-outline-secondary {
-    color: #ffffff !important;
-    border-color: #a0a0a0;
-    background-color: transparent;
-}
-
-.btn-outline-info {
-    color: #4dffff !important;
-    border-color: #4dffff;
-    background-color: transparent;
-}
-
-.btn-outline-dark {
-    color: #ffffff !important;
-    border-color: #ffffff;
-    background-color: transparent;
-}
-
-.btn-outline-primary {
-    color: #4d8bff !important;
-    border-color: #4d8bff;
-    background-color: transparent;
-}
-
-/* Button outline styling - checked/active state */
-.btn-check:checked + .btn-outline-danger,
-.btn-check:active + .btn-outline-danger {
-    background-color: #ff4d4d;
-    border-color: #ff4d4d;
-    color: #ffffff !important;
-    font-weight: bold;
-}
-
-.btn-check:checked + .btn-outline-warning,
-.btn-check:active + .btn-outline-warning {
-    background-color: #ffdd4d;
-    border-color: #ffdd4d;
-    color: #000000 !important;
-    font-weight: bold;
-}
-
-.btn-check:checked + .btn-outline-secondary,
-.btn-check:active + .btn-outline-secondary {
-    background-color: #a0a0a0;
-    border-color: #a0a0a0;
-    color: #000000 !important;
-    font-weight: bold;
-}
-
-.btn-check:checked + .btn-outline-info,
-.btn-check:active + .btn-outline-info {
-    background-color: #4dffff;
-    border-color: #4dffff;
-    color: #000000 !important;
-    font-weight: bold;
-}
-
-.btn-check:checked + .btn-outline-dark,
-.btn-check:active + .btn-outline-dark {
-    background-color: #ffffff;
-    border-color: #ffffff;
-    color: #000000 !important;
-    font-weight: bold;
-}
-
-.btn-check:checked + .btn-outline-primary,
-.btn-check:active + .btn-outline-primary {
-    background-color: #4d8bff;
-    border-color: #4d8bff;
-    color: #ffffff !important;
-    font-weight: bold;
-}
-
-/* Form label styling */
-.form-check-label {
-    color: #ffffff;
-    font-size: 1.1rem;
-}
-
-/* Next button styling */
-.btn-primary.next-btn {
-    background-color: #0d6efd;
-    border-color: #0d6efd;
-    color: #ffffff;
-    font-weight: bold;
-    padding: 10px 25px;
-    font-size: 1.1rem;
-    float: right;
-}
-
-.btn-primary.next-btn:hover {
-    background-color: #0b5ed7;
-}
-
-/* Button group styling */
-.btn-group-vertical .btn,
-.btn-group .btn {
-    color: #ffffff !important;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: 5px;
-    padding: 12px 15px;
-    text-align: left;
-}
-
-/* Label button styling */
-label.btn {
-    color: #ffffff !important;
-    text-align: left;
-    padding: 12px 15px;
-    font-size: 1.1rem;
-}
-
-/* Responsive styling for mobile devices */
-@media (max-width: 768px) {
-    .quiz-container {
-        margin: 15px;
-        padding: 15px;
-    }
-    
-    .quiz-section {
-        padding: 15px;
-    }
-    
-    .btn-genre {
-        min-width: 90px;
-        font-size: 0.9rem;
-    }
-    
-    .quiz-section-title {
-        font-size: 1.5rem;
-    }
-    
-    .question {
-        font-size: 1.3rem;
-    }
 }
