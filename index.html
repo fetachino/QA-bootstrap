@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Genre Personality Quiz</title>
+    <!-- Bootstrap CSS import -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styling -->
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -104,18 +106,17 @@
                 <button class="btn btn-primary float-end next-btn" onclick="nextQuestion(3)">Next</button>
             </div>
             
-            <!-- Question 4 -->
+            <!-- Question 4 - High contrast version -->
             <div class="quiz-section" id="q4" style="display: none;">
                 <h3 class="quiz-section-title">Question 4 of 5</h3>
                 <div class="question">What emotions do you most appreciate in storytelling?</div>
                 <div class="options">
-                    <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-action btn-quiz" onclick="selectEmotion('action')">Excitement & Triumph</button>
-                        <button type="button" class="btn btn-comedy btn-quiz" onclick="selectEmotion('comedy')">Joy & Surprise</button>
-                        <button type="button" class="btn btn-drama btn-quiz" onclick="selectEmotion('drama')">Compassion & Empathy</button>
-                        <button type="button" class="btn btn-scifi btn-quiz" onclick="selectEmotion('scifi')">Wonder & Curiosity</button>
-                        <button type="button" class="btn btn-horror btn-quiz" onclick="selectEmotion('horror')">Fear & Suspense</button>
-                    </div>
+                    <!-- Using regular buttons with high contrast styling instead of custom buttons -->
+                    <button type="button" class="btn" onclick="selectEmotion('action')">Excitement & Triumph</button>
+                    <button type="button" class="btn" onclick="selectEmotion('comedy')">Joy & Surprise</button>
+                    <button type="button" class="btn" onclick="selectEmotion('drama')">Compassion & Empathy</button>
+                    <button type="button" class="btn" onclick="selectEmotion('scifi')">Wonder & Curiosity</button>
+                    <button type="button" class="btn" onclick="selectEmotion('horror')">Fear & Suspense</button>
                 </div>
                 <button class="btn btn-primary float-end next-btn" id="q4-next" onclick="nextQuestion(4)" disabled>Next</button>
             </div>
