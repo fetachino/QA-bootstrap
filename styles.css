@@ -1,11 +1,12 @@
 body {
     background-color: #121212;
-    color: #f8f9fa;
+    color: #ffffff; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 50px;
 }
 
 .quiz-container {
-    max-width: 700px;
+    max-width: 800px;
     margin: 30px auto;
     background-color: #1e1e1e;
     border-radius: 15px;
@@ -16,29 +17,29 @@ body {
 .quiz-header {
     text-align: center;
     margin-bottom: 30px;
-    color: #ff9d00;
+    color: #ffa500; /* Brighter orange color */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444; /* Lighter border */
 }
 
 .quiz-section {
     margin-bottom: 25px;
-    padding: 15px;
+    padding: 20px;
     background-color: #292929;
     border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .question {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #e0e0e0;
+    font-size: 1.3rem; /* Larger font size */
+    margin-bottom: 20px;
+    color: #ffffff; /* Pure white for maximum contrast */
+    font-weight: 500; /* Slightly bolder */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
 }
 
 .options {
     margin-bottom: 15px;
-}
-
-.btn-quiz {
-    margin: 5px;
-    min-width: 120px;
 }
 
 .btn-genre {
@@ -47,49 +48,21 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.btn-action {
-    background-color: #dc3545;
-    border-color: #dc3545;
-}
-
-.btn-comedy {
-    background-color: #ffc107;
-    border-color: #ffc107;
-    color: #212529;
-}
-
-.btn-drama {
-    background-color: #6c757d;
-    border-color: #6c757d;
-}
-
-.btn-scifi {
-    background-color: #0dcaf0;
-    border-color: #0dcaf0;
-    color: #212529;
-}
-
-.btn-horror {
-    background-color: #212529;
-    border-color: #212529;
-}
-
 .btn-submit {
     background-color: #ff9d00;
     border-color: #ff9d00;
-    color: #212529;
+    color: #000000; /* Black text on orange button for contrast */
     font-weight: bold;
-    padding: 10px 25px;
+    padding: 12px 25px;
     font-size: 1.1rem;
+    transition: all 0.3s ease;
 }
 
-.result-container {
-    display: none;
-    text-align: center;
-    padding: 20px;
-    background-color: #292929;
-    border-radius: 10px;
-    margin-top: 20px;
+.btn-submit:hover {
+    background-color: #ffb84d; /* Lighter on hover */
+    border-color: #ffb84d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .form-check-input:checked {
@@ -97,23 +70,180 @@ body {
     border-color: #ff9d00;
 }
 
-.progress {
-    height: 10px;
-    margin-bottom: 25px;
-}
-
-.icon {
-    margin-right: 8px;
-}
-
 .quiz-section-title {
     font-weight: bold;
-    color: #ff9d00;
+    color: #ffa500; /* Brighter orange */
     margin-bottom: 15px;
+    font-size: 1.5rem; /* Larger size */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .btn-restart {
-    background-color: #198754;
-    border-color: #198754;
+    background-color: #2cb74a; /* Brighter green */
+    border-color: #2cb74a;
+    color: #ffffff; /* White text */
     margin-top: 15px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+.btn-restart:hover {
+    background-color: #34d456; 
+    border-color: #34d456;
+}
+
+/* Results Section Styling */
+.results-section {
+    padding: 30px 15px;
+    margin-top: 40px;
+    border-top: 2px solid #444; /* Lighter border */
+}
+
+.genre-card {
+    background-color: #292929;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff; /* Ensure text is white */
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.action-card {
+    border-top: 4px solid #ff4d4d; /* Brighter red */
+}
+
+.comedy-card {
+    border-top: 4px solid #ffdd4d; /* Brighter yellow */
+}
+
+.drama-card {
+    border-top: 4px solid #a0a0a0; /* Brighter gray */
+}
+
+.scifi-card {
+    border-top: 4px solid #4dffff; /* Brighter cyan */
+}
+
+.card-title {
+    color: #ffa500; /* Bright orange */
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.card-text {
+    color: #ffffff; /* Pure white */
+    font-size: 1.1rem;
+}
+
+.btn-outline-danger {
+    color: #ff4d4d; /* Brighter red */
+    border-color: #ff4d4d;
+}
+
+.btn-outline-warning {
+    color: #ffdd4d; /* Brighter yellow */
+    border-color: #ffdd4d;
+}
+
+.btn-outline-secondary {
+    color: #ffffff; /* White instead of gray */
+    border-color: #a0a0a0;
+}
+
+.btn-outline-info {
+    color: #4dffff; /* Brighter cyan */
+    border-color: #4dffff;
+}
+
+.btn-outline-dark {
+    color: #ffffff; /* White */
+    border-color: #ffffff;
+}
+
+.btn-outline-primary {
+    color: #4d8bff; /* Brighter blue */
+    border-color: #4d8bff;
+}
+
+/* Button checked states with improved contrast */
+.btn-check:checked + .btn-outline-danger,
+.btn-check:active + .btn-outline-danger {
+    background-color: #ff4d4d;
+    border-color: #ff4d4d;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn-check:checked + .btn-outline-warning,
+.btn-check:active + .btn-outline-warning {
+    background-color: #ffdd4d;
+    border-color: #ffdd4d;
+    color: #000000; /* Black text on yellow background for contrast */
+    font-weight: bold;
+}
+
+.btn-check:checked + .btn-outline-secondary,
+.btn-check:active + .btn-outline-secondary {
+    background-color: #a0a0a0;
+    border-color: #a0a0a0;
+    color: #000000; /* Black text on light gray for contrast */
+    font-weight: bold;
+}
+
+.btn-check:checked + .btn-outline-info,
+.btn-check:active + .btn-outline-info {
+    background-color: #4dffff;
+    border-color: #4dffff;
+    color: #000000; /* Black text on cyan for contrast */
+    font-weight: bold;
+}
+
+.btn-check:checked + .btn-outline-dark,
+.btn-check:active + .btn-outline-dark {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #000000; /* Black text on white for contrast */
+    font-weight: bold;
+}
+
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary {
+    background-color: #4d8bff;
+    border-color: #4d8bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form-check-label {
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.btn-primary.next-btn {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 20px;
+    float: right;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .quiz-container {
+        margin: 15px;
+        padding: 15px;
+    }
+    
+    .quiz-section {
+        padding: 15px;
+    }
+    
+    .btn-genre {
+        min-width: 90px;
+        font-size: 0.9rem;
+    }
 }
